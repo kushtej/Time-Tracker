@@ -4,12 +4,21 @@
   "description": "A Time Tracker for Tasks",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
-
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kushtej",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushtej/Time-Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kushtej/Time-Tracker/issues"
+  },
+  "homepage": "https://github.com/kushtej/Time-Tracker#readme"
 }
