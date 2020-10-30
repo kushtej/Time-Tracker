@@ -2,9 +2,11 @@
   "name": "time-tracker",
   "version": "1.0.0",
   "description": "A Time Tracker for Tasks",
-  "main": "node app.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
   },
   "author": "kushtej",
   "license": "ISC",
