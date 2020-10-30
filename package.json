@@ -1,15 +1,18 @@
 {
-  "name": "time-tracker",
+  "name": "myportfolio",
   "version": "1.0.0",
-  "description": "A Time Tracker for Tasks",
+  "description": "This is My Portfolio.",
   "main": "app.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
-
   },
   "author": "kushtej",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "8.10.0"
   }
 }
