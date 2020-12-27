@@ -1,5 +1,5 @@
 /**
- * loads buttons for all the routename in config.js
+ * loads buttons for all the routename in routes.js
  * 
  * @param {void}
  * @returns {void}
@@ -43,10 +43,19 @@ const loadJS = (file) => {
     script.src = file
     document.getElementById('scriptsdiv').appendChild(script)
     script.onload = function () { app(); app = null }
+    clearURL()
+}
+
+
+
+const clearURL = () => {
+    let currentURL = window.location.href.split('?')[0];
+    console.log(currentURL)
+    window.history.replaceState(null, null, currentURL)
 }
 
 /**
- * checks route params in config and sends routefile specified for the route
+ * checks route params in routes and sends routefile specified for the route
  * 
  * @param {void}
  * @returns {void}
