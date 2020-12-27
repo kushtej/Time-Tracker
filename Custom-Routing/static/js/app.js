@@ -46,11 +46,15 @@ const loadJS = (file) => {
     clearURL()
 }
 
+/**
+ * clears String parameters after the content is rendered
+ * @param {void}
+ * @returns {void}
+ */
 
 
 const clearURL = () => {
     let currentURL = window.location.href.split('?')[0];
-    console.log(currentURL)
     window.history.replaceState(null, null, currentURL)
 }
 
