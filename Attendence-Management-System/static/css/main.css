@@ -1,0 +1,102 @@
+ul {
+    list-style-type: none;
+  }
+  li {
+    float: right;
+    padding:10px;
+  }
+  
+  html *
+  {
+    font-size :16px;
+    line-height:1.5;
+  
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    float: right;
+    padding :10px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  
+  
+  /* html, body {
+    width: 100%;
+}
+table {
+    margin: 0 auto;
+} */
+
+h1{font-size: 40px;}
+h3{font-size: 18px;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.container{
+	width: 1330px;
+	margin-left: auto;
+  margin-right: auto;
+
+}
+input[type=text],input[type=password],input[type=email]{
+  width:250px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  outline:none;
+  padding: 6px;
+}
+
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{
+  border:1px solid #56b4ef;
+  box-shadow: 0px 0px 3px 1px #c8def0;
+}
+
+select {
+  width: 120%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.button2 {
+  padding: 5px 30px;  background-color: #4CAF50; /* Green */
+  color:white}
+
+  .button3 {
+    padding: 5px 60px;  background-color: #4CAF50; /* Green */
+    color:white}
+
+    a {
+      text-decoration: none;
+  }
+  a:link, a:visited {
+      color: blue;
+  }
+  a:hover {
+      color: red;
+  }
