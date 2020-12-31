@@ -13,26 +13,10 @@
   }
 ?>
 
-<nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-base">
-            <a class="navbar-brand" href="/Quotes/index.php">Project</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/Quotes/homepage.php">Quotes</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-          <li><a href="/Quotes/homepage.php?logout=true"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-          </ul>
-        </div>
-      </nav>
-
-
-
 
   <div class="container">
-    <h1>Blockquotes</h1>
-    <p>The blockquote element is used to present content from another source:</p>
+    <h1>New Quote</h1>
+    <p>Add a brandnew quote to your Quote Book:</p>
 
   <form method="POST" action="create_quote.php">
     <div class="form-group">

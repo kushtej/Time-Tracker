@@ -3,21 +3,6 @@
 </div>
 
 
-	<nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-base">
-            <a class="navbar-brand" href="/Quotes/index.php">Project</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/Quotes/index.php">Home</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/Quotes/signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="/Quotes/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
-
 
 <div class="container">
   <h2> LOGIN PAGE :</h2>
@@ -47,7 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $sql     = "SELECT password FROM users WHERE username ='$username'";
     $result  = $conn->query($sql);
     $content = $result->fetch_assoc();
-    // echo $content['password'];
     
     if ($content['password'] == $password)
       {
@@ -56,7 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
       }
     else
       {
-        //echo "Error: " . $sql . "<br>" . $conn->error;
         $sql     = "SELECT count(*) AS count FROM users WHERE username ='$username'";
         $result  = $conn->query($sql);
         $content = $result->fetch_assoc();

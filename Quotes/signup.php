@@ -3,20 +3,6 @@
 </div>
 
 
-<nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-base">
-            <a class="navbar-brand" href="/Quotes/index.php">Project</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/Quotes/index.php">Home</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/Quotes/signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="/Quotes/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
 
 <div class="container">
   <h2> SIGNUP PAGE :</h2>
@@ -63,9 +49,7 @@
       //sa-1
       $("#sq-1").click (function(){
       $("#sa-1").show();
-      // if($.trim($('#sa-1').val()) == ''){
-      //   alert('Input can not be left blank');
-      // }
+
 
       $("#sa-2,#sa-3").hide();
       });
@@ -81,12 +65,6 @@
       $("#sa-3").show();
       $("#sa-1,#sa-2").hide();
       });
-
-//       $('#submit').click(function(){
-//    if($.trim($('#myMessage').val()) == ''){
-//       alert('Input can not be left blank');
-//    }
-// });
 
       </script>
 

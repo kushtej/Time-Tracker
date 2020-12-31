@@ -5,21 +5,6 @@
 
 
 
-<nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-base">
-            <a class="navbar-brand" href="/Quotes/index.php">Project</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/Quotes/index.php">Home</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/Quotes/signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="/Quotes/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
-
 <div class="jumbotron text-center" style="margin-top: -20px;">
   <h1>Collect your Quotes!</h1>
   <p>Collect your Most Famous Quotes of All Time</p> 
