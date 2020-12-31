@@ -12,7 +12,10 @@ This is a repository for all my small Projects which I do to pass my time or whe
 
 ### 02. Custom-Routing :
 
-**A Javascript Custom Routing through various pages without page refresh.**
+**A Javascript Custom Routing through various pages without Page-Refresh.**
+
+![Routing](Custom-Routing/preview.gif?raw=true " ")
+
 
 **Source Code :** https://github.com/kushtej/my-miscellaneous-projects/tree/master/Custom-Routing
 

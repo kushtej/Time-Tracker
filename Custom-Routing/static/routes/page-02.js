@@ -1,3 +1,3 @@
 var app = () => {
-    document.getElementById("root").innerHTML = "This is page 02"
+    document.getElementById("root").innerHTML = "<div style='color:red' class='page-container'>This is page 02</div>"
 }
