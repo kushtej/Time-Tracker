@@ -23,4 +23,6 @@ This is a repository for all my small Projects which I do to pass my time or whe
 
 **A Simple Quote book implemented as a Part of Learning PHP.**
 
+![Routing](Quotes/preview.gif?raw=true " ")
+
 **Source Code :** https://github.com/kushtej/my-miscellaneous-projects/tree/master/Quotes
