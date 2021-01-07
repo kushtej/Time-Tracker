@@ -1,0 +1,50 @@
+
+		.flex-container {
+
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center; 
+    }
+
+
+
+    .flex-container> div {
+      background-color: #f1f1f1;
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      width: 170px;
+      line-height: 75px;
+
+      font-size: 30px;
+
+    }
+    div > .zero{
+      width:673.9px;
+      height: 70px;
+      padding-right:2px;
+      margin-left:-1px;   
+      justify-content: center; 
+        text-align: right;
+         font-size: 50px; 
+         background-color: grey;
+         color: white;
+    }
+    div>.row-2{
+      background-color: yellow;
+      border-right: none;
+    }
+    .top{
+      margin-top: 10%;
+
+    }
+
+    .flex-container > .zero1{
+      height:80px;width:341px;
+    }
+    .clr{
+      font-size: 20px;
+
+      border: none;
+
+    }

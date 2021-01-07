@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css"/>
+</head>
+<body>
+        <h1 style='text-align:center'>Caluclator</h1>
+	<div class="top">
+		<div class="flex-container">
+			<div class="zero">
+				<input type="text" id="result" class="zero"
+					oninput="this.value = this.value.replace(/[^0-9.]/g, '');"
+					placeholder="0">
+			</div>
+		</div>
+		<div class="flex-container">
+			<div>
+				<input id="clr" type="button" onClick="clr()" class="clr" Value="AC" />
+			</div>
+			<div onclick="back()">C</div>
+			<div onclick="send('%')">%</div>
+			<div class="row-2" onclick="send('/')">/</div>
+		</div>
+		<div class="flex-container">
+			<div onclick="send('1')">1</div>
+			<div onclick="send('2')">2</div>
+			<div onclick="send('3')">3</div>
+			<div class="row-2" onclick="send('*')">X</div>
+		</div>
+		<div class="flex-container">
+			<div onclick="send('4')">4</div>
+			<div onclick="send('5')">5</div>
+			<div onclick="send('6')">6</div>
+			<div class="row-2" onclick="send('-')">-</div>
+		</div>
+		<div class="flex-container">
+			<div onclick="send('7')">7</div>
+			<div onclick="send('8')">8</div>
+			<div onclick="send('9')">9</div>
+			<div class="row-2" onclick="send('+')">+</div>
+		</div>
+		<div class="flex-container">
+			<div onclick="send('0')" class="zero1">0</div>
+			<div onclick="send('.')">.</div>
+			<div onclick="cal()" class="row-2">=</div>
+		</div>
+	</div>
+	<script>
+		function send(val) {
+			var res = document.getElementById("result").value += val;
+		}
+		function cal() {
+			document.getElementById("result").value = eval(document.getElementById("result").value)
+		}
+		function clr() {
+			document.getElementById("result").value = "";
+		}
+		function back() {
+			var a = document.getElementById('result'),
+			b = a.value;
+			a.value = b.substring(0, b.length - 1);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+} */
+
+body{
+  align-items:center;
+  justify-content: center;
+  background: linear-gradient( to left top,grey,pink) fixed;
+  text-transform: capitalize;
+  /* text-align:center; */
+}
+.print-posts{
+/* margin-left:20%; */
+  font-size:20px;
+  width:70%;
+  color:black;
+  /* background-color:white; */
+}
+.post{
+  border-radius: 15%;
+  padding:5px;
+  background-color:#D3CCE3;
+  margin:10px;
+}
+.container{
+  margin-left: 25%;
+  justify-content: center;
+}
+.page-nav{
+  margin-left:17%;
+}
+
+.heading{
+  text-align:center;
+  font-size:40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+}
+ul {
+  
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+  overflow: hidden;
+  background-color:grey;
+  position: fixed;
+  width: auto;
+  
+  margin:10px;
+ }
+ 
+ 
+ li {
+  /* margin-bottom: 20%; */
+  float: left;
+  /* border-right: 4px solid white; */
+  padding:2px;
+ }
+ 
+ /* Add a border to all( but not the last) list items */
+ li:last-child { 
+  border-right: none;
+ }
+ 
+ li a {
+   
+  display: block;
+
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+ }
+ 
+ /* Links will change color when hovered over */
+ li a:hover {
+  background-color: lightblue;
+ }
+ 

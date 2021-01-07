@@ -1,0 +1,77 @@
+<?php $helper = new Model\Helper()?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>login</title>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <link rel="stylesheet" type="text/css"  href="public/css/style.css">
+   </head>
+   <style type="text/css"></style>
+   <body>
+      <div class="body">
+         <header class="flex">
+            <div class="navbar1 ">
+               <div>
+                  <a><i class="fa fa-bell favi-con" aria-hidden="true"/></i></a>
+                  <a href="/mvcphp/login"> Home</a>
+                  <a href="/mvcphp/login">log-in</a>
+               </div>
+            </div>
+         </header>
+         <div  class="flexcontainer">
+            <div class="block">
+               <img class="img" src="public/images/1.jpg">
+               <div class="block1">
+                  <form action="<?=$helper->buildUrl()?>/submit/signup" method="post">
+                     <table class="table">
+                        <tr>
+                           <th>
+                              <input class="input" type="text" name="first-name" 
+                                 placeholder="enter your first-name" value='a' required/>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              <input class="input" type="text" name="last-name" placeholder="enter your last-name" value='a' required/>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              <input class="input" type="email" name="email" placeholder="email-id" value='a@a.com' required/>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              <input class="input" type="password" name="password" placeholder="enter password" value='a' required/>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th> 
+                              <input class="input" type="password" name="" placeholder="re - enter password" />
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              <input  class="button" type="submit" name="submit" value="submit" required>
+                           </th>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <footer class="footer">
+            <div class="navbar ">
+               <a href="#Settings">Settings</a>
+               <a href="#Privacy">Privacy</a>
+               <a href="#terms">Terms</a>
+               <div  class="navba">
+                  <a href="#Advertising">Advertising</a>
+                  <a href="#Business">Business</a>
+                  <a href="#about">About</a>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
