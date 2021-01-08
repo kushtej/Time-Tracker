@@ -1,5 +1,7 @@
 <?php
 
+// ini_set('display_errors', 1);
+
 session_start();
 
 $servername = "localhost"; // YOUR SERVER NAME
@@ -11,12 +13,13 @@ $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
 
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
+
+
 function footer()
 {
-  echo "</body>";
-  echo "</html>";
 
-  $conn->close();
+   echo "</body>";
+  echo "</html>";
 }
 
 ?>
@@ -33,6 +36,8 @@ function footer()
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 

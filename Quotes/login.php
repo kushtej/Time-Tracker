@@ -19,7 +19,6 @@
 
     <input  type="submit" name="submit" class="btn btn-default">
   </form>
-
 </div>
 
 <?php
@@ -54,5 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
       }
   }
   footer();
+  $conn->close();
+
 ?>
 

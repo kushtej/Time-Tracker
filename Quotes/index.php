@@ -29,4 +29,6 @@
 
 
 
-<?php footer();?>
+<?php footer();
+  $conn->close();
+  ?>

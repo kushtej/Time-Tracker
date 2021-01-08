@@ -48,4 +48,6 @@
 
 
 
-<?footer();?>
+<?footer();
+  $conn->close();
+?>

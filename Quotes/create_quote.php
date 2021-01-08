@@ -69,5 +69,5 @@
 
 
   footer();
-
+  $conn->close();
 ?>
