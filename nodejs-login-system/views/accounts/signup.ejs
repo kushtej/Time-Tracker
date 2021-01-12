@@ -3,7 +3,7 @@
 
 <head>
   <%- include('../partials/head'); %>
-  <script type="text/javascript" src="/scripts/index.js"></script>
+  <script type="text/javascript" src="/accounts/scripts/index.js"></script>
 </head>
 
 <body>
@@ -15,14 +15,11 @@
 
 
     <h2>Sign up Form</h2>
-    <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
-    <p>Try to submit this form before filling out the input fields, to see the effect.</p>
-    <form action="/signup" method="POST" class="needs-validation" novalidate>
+    <form action="/signup" id='#signupForm' method="POST">
       <div class="form-group">
         <label for="uname">Username:</label>
         <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
-        <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
+        <div id="availabality"</div>
       </div>
 
       <div class="form-group">
@@ -35,18 +32,24 @@
       <div class="form-group">
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
-        <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
+        <!-- <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div> -->
+        <div id="valid-password"></div>
       </div>
 
 
       <div class="form-group">
         <label for="pwd">Retype Password:</label>
         <input type="password" class="form-control" id="repassword" placeholder="Enter password" name="repassword" required>
-        <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
+        <!-- <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div> -->
+        <div id="valid-repassword"></div>
+
       </div>
 
+      <% if(status == false){ %>
+        <p style="color:red"><%=message%></p>
+      <% } %>
 
       <div class="form-group form-check">
         <label class="form-check-label">
@@ -55,7 +58,9 @@
           <div class="invalid-feedback">Check this checkbox to continue.</div>
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div id='submitButton'>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
   </div>
   

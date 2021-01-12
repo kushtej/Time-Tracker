@@ -53,22 +53,14 @@ router.post("/login", function (req, res) {
                         status:false,
                         message: "Email and password does not match"
                     });
-                    // res.json({
-                    //     status: false,
-                    //     message: "Email and password does not match"
-                    // });
-                }                        // status: false,
+                }
 
             });
         }
         else {
-            // res.json({
-            //     status: false,
-            //     message: "Email does not exits"
-            // });
             res.render('accounts/login',{
                 status:false,
-                message: "Email does not exits"
+                message: "Email does not exists"
             });
         }
     });
@@ -84,10 +76,23 @@ router.get("/signup", function (req, res) {
     }
     else{
         res.render('accounts/signup',{
-            status:false
+            status:false,
+            message :""
         });
     }
 
+});
+
+router.get("/api/checkusername", function (req, res) {
+   let name = req.query.username;
+   mysqlConnection.query('SELECT * FROM users WHERE username = ?', name, function (error, results, fields) {
+    if (results.length > 0) {
+        res.send(false);
+    }
+    else{
+        res.send(true);
+    }
+    });
 });
 
 
@@ -106,36 +111,45 @@ router.post('/signup', formValidate, (req, res) => {
         mysqlConnection.query('INSERT INTO users SET ?', user, function (error, results, fields) {
             if (error) throw error;
             sess.username = req.body.username;
-            // res.send("signup successful!");
             res.redirect('/homepage');
         });
     });
 });
 
 
+function checkUsername(name,callBack){
+    mysqlConnection.query('SELECT * FROM users WHERE username = ?', name, function (error, results, fields) {
+        if (results.length > 0) {
+            callBack(true);
+        }
+        else{
+            callBack(false);
+        }
+    });
+}
+
+
 function formValidate(req,res,next){
 
     if(req.body.password !== req.body.repassword ){
-        res.json({
+        res.render('accounts/signup',{
             status: false,
             message: "Passwords do not match"
         });
         return
     }
 
-    mysqlConnection.query('SELECT * FROM users WHERE username = ?', req.body.username, function (error, results, fields) {
-        if (results.length > 0) {
-            res.json({
+    checkUsername(req.body.username, function(userExists) {
+        if(userExists == true){
+            res.render('accounts/signup',{
                 status: false,
                 message: "Username already exists"
             });
             return
-        }
-        else{
+        }else{
             return next()
         }
     });
-
 }
 
 router.get("/logout", function (req, res) {
