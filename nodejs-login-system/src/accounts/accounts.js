@@ -123,17 +123,19 @@ function formValidate(req,res,next){
         return
     }
 
-    // mysqlConnection.query('SELECT * FROM users WHERE username = ?', name, function (error, results, fields) {
-    //     if (results.length > 0) {
-    //         res.json({
-    //             status: false,
-    //             message: "Username already exists"
-    //         });
-    //         return
-    //     }
-    // });
+    mysqlConnection.query('SELECT * FROM users WHERE username = ?', req.body.username, function (error, results, fields) {
+        if (results.length > 0) {
+            res.json({
+                status: false,
+                message: "Username already exists"
+            });
+            return
+        }
+        else{
+            return next()
+        }
+    });
 
-    return next()
 }
 
 router.get("/logout", function (req, res) {
