@@ -53,3 +53,10 @@ This is a repository for all my small Projects which I do to pass my time or whe
 
 **Source Code :** https://github.com/kushtej/my-miscellaneous-projects/tree/master/nodejs-login-system
 
+### 07. React Pagination :
+
+**My first implementaion task of React which includes a simple pagination**
+
+![pagination](pagination/preview.gif?raw=true " ")
+
+**Source Code :** https://github.com/kushtej/my-miscellaneous-projects/tree/master/pagination
